@@ -31,54 +31,22 @@ body {
   height: 550px;
 }
 
-.labongcat .hat {
+.labongcat .hat.top {
   position: absolute;
-  border: 5px solid #222;
+  top: 55px;
+  left: 70px;
+  width: 208px;
 }
 
 .labongcat .hat.bottom {
+  position: absolute;
+  border: 5px solid #222;
   top: 147px;
   left: 73px;
   width: 193px;
   height: 180px;
   border-radius: 80px 80px 115px 115px;
   background-color: var(--hat);
-}
-
-.labongcat .hat.top.line {
-  /* top: -75px;
-  left: -32px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 160px 75px 0 55px;
-  border-color: #222222 transparent transparent transparent;
-  box-sizing: border-box;
-  transform: rotate(27deg); */
-}
-
-.labongcat .hat.top.left.line {
-  top: -75px;
-  left: -32px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 160px 75px 0 55px;
-  border-color: #222222 transparent transparent transparent;
-  box-sizing: border-box;
-  transform: rotate(27deg);
-}
-
-.labongcat .hat.top.left {
-  top: -69px;
-  left: -23px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 139px 65px 0 50px;
-  border-color: var(--hat) transparent transparent transparent;
-  box-sizing: border-box;
-  transform: rotate(27deg);
 }
 
 .labongcat .head {
@@ -168,5 +136,46 @@ body {
   background-color: var(--skin);
 }
 
-.labongcat .hat.top {
+.labongcat .whiskers .left-top {
+  position: absolute;
+  top: 130px;
+  left: -15px;
+  width: 50px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 3px 0 0 3px;
+  transform: rotate(2deg);
+}
+
+.labongcat .whiskers .left-bottom {
+  position: absolute;
+  top: 152px;
+  left: -3px;
+  width: 42px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 3px 0 0 3px;
+  transform: rotate(-15deg);
+}
+
+.labongcat .whiskers .right-top {
+  position: absolute;
+  top: 130px;
+  right: -15px;
+  width: 50px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 0 3px 3px 0;
+  transform: rotate(-2deg);
+}
+
+.labongcat .whiskers .right-bottom {
+  position: absolute;
+  top: 152px;
+  right: -3px;
+  width: 42px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 0 3px 3px 0;
+  transform: rotate(15deg);
 }
