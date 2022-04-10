@@ -2,7 +2,7 @@
 
 /* setting */
 :root {
-  --hallabong: #f2a444;
+  --hallabong: #eea041;
   --leaf: #4e5927;
   --hat: #d96c0e;
   --hallabongDot: #a65510;
@@ -29,6 +29,37 @@ body {
   margin: 50px auto;
   width: 340px;
   height: 550px;
+}
+
+.labongcat .body {
+  position: absolute;
+  top: 290px;
+  left: 50px;
+  width: 240px;
+  height: 228px;
+  border: 5px solid #222;
+  border-radius: 170px 170px 120px 120px;
+  background-color: var(--skin);
+}
+
+.labongcat .arm {
+  position: absolute;
+  top: 350px;
+  width: 50px;
+  height: 110px;
+  border: 5px solid #222;
+  background-color: var(--skin);
+  border-radius: 45%;
+}
+
+.labongcat .arm.left {
+  left: 42px;
+  transform: rotate(18deg);
+}
+
+.labongcat .arm.right {
+  right: 32px;
+  transform: rotate(-18deg);
 }
 
 .labongcat .hat.top {
@@ -81,7 +112,7 @@ body {
 .labongcat .nose {
   position: absolute;
   top: 123px;
-  left: 81px;
+  left: 80px;
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
@@ -178,4 +209,89 @@ body {
   background-color: #222;
   border-radius: 0 3px 3px 0;
   transform: rotate(15deg);
+}
+
+.labongcat .hallabong {
+  position: absolute;
+  top: 345px;
+  left: 83px;
+}
+
+.labongcat .hallabong .fruit {
+  position: absolute;
+  top: 32px;
+  width: 175px;
+  height: 170px;
+  background-color: var(--hallabong);
+  border: 5px solid #222;
+  border-radius: 120px 120px 100px 100px;
+}
+
+.labongcat .hallabong .fruit-top {
+  position: absolute;
+  top: 18px;
+  left: 60px;
+  width: 50px;
+  height: 26px;
+  background-color: var(--hallabong);
+  border: 5px solid #222;
+  border-radius: 30px 30px 23px 23px;
+}
+
+.labongcat .hallabong .stem {
+  position: absolute;
+  left: 83px;
+  width: 5px;
+  height: 25px;
+  border: 5px solid #222;
+  border-radius: 100% 50% 10px 10px;
+  transform: rotate(2deg);
+  background-color: var(--leaf);
+}
+
+.labongcat .hallabong .leaf {
+  position: absolute;
+  width: 38px;
+  height: 22px;
+  border: 5px solid #222;
+  border-radius: 20px 0 15px 0;
+  background-color: var(--leaf);
+}
+
+.labongcat .hallabong .leaf.left {
+  top: -5px;
+  left: 35px;
+  border-radius: 0 20px 0 20px;
+  transform: rotate(-35deg);
+}
+
+.labongcat .hallabong .leaf.right {
+  top: 22px;
+  left: 95px;
+  transform: rotate(55deg);
+}
+
+.labongcat .hallabong .dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: var(--hallabongDot);
+}
+
+.labongcat .hallabong .dot:nth-child(1) {
+  z-index: 10;
+  top: 72px;
+  left: 42px;
+}
+
+.labongcat .hallabong .dot:nth-child(2) {
+  z-index: 10;
+  top: 81px;
+  left: 65px;
+}
+.labongcat .hallabong .dot:nth-child(3) {
+  z-index: 10;
+  top: 93px;
+  left: 50px;
 }
