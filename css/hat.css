@@ -1,0 +1,17 @@
+.labongcat .hat.top {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  width: 208px;
+}
+
+.labongcat .hat.bottom {
+  position: absolute;
+  border: 5px solid #222;
+  top: 147px;
+  left: 73px;
+  width: 193px;
+  height: 180px;
+  border-radius: 80px 80px 115px 115px;
+  background-color: var(--hat);
+}

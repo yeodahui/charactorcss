@@ -1,0 +1,30 @@
+/* transition */
+.labongcat:hover .hallabong {
+  transform: scale(0.95) rotate(-5deg) translateX(-10px);
+}
+
+.labongcat:hover .hand.left {
+  transform: rotate(-55deg) translateX(10px);
+}
+
+.labongcat:hover .hand.right {
+  transform: rotate(55deg) translateX(-10px);
+}
+
+.labongcat:hover .frown.left {
+  left: 72px;
+  border-color: #a08e869a;
+}
+
+.labongcat:hover .frown.right {
+  right: 77px;
+  border-color: #a08e869a;
+}
+
+.labongcat:hover .nose {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.labongcat:hover .mouth {
+  transform: scale(0.9);
+}

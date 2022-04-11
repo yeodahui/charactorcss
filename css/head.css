@@ -1,0 +1,163 @@
+.labongcat .head {
+  position: absolute;
+  top: 132px;
+  left: 81px;
+  width: 177px;
+  height: 186px;
+  border: 5px solid #222;
+  border-radius: 80px 80px 120px 120px;
+  background-color: var(--skin);
+}
+
+.labongcat .frown.left {
+  position: absolute;
+  top: 75px;
+  left: 68px;
+  border-width: 5px 5px 0 0;
+  border-color: var(--skin);
+  border-style: solid;
+  border-radius: 3px 10px 0px 0px;
+  width: 10px;
+  height: 18px;
+  transition: 0.7s left, 0.7s border-color;
+}
+
+.labongcat .frown.right {
+  position: absolute;
+  top: 74px;
+  right: 70px;
+  border-width: 0px 0 0 5px;
+  border-color: var(--skin);
+  border-style: solid;
+  border-radius: 5px;
+  width: 1px;
+  height: 18px;
+  transition: 0.7s right, 0.7s border-color;
+}
+
+.labongcat .eye {
+  position: absolute;
+  top: 100px;
+  width: 25px;
+  height: 15px;
+  background-color: #222;
+}
+
+.labongcat .eye.left {
+  left: 39px;
+  border-radius: 8px 20px 10px 20px;
+}
+
+.labongcat .eye.right {
+  right: 39px;
+  border-radius: 20px 8px 20px 10px;
+}
+
+.labongcat .nose,
+.labongcat .mouth {
+  transition: 0.5s transform;
+}
+
+.labongcat .nose {
+  position: absolute;
+  top: 123px;
+  left: 80px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: var(--nose);
+  border: 5px solid #222;
+  border-radius: 15px 7px 7px 7px;
+}
+
+.labongcat .mouth {
+  position: absolute;
+  top: 119px;
+  width: 35px;
+  height: 33px;
+  border: 5px solid #222;
+}
+.labongcat .mouth.left {
+  left: 48px;
+  border-radius: 100% 100% 45px 60px;
+}
+
+.labongcat .mouth.right {
+  right: 44px;
+  border-radius: 100% 100% 60px 45px;
+}
+
+.labongcat .mouth-mask {
+  position: absolute;
+  top: 118px;
+  left: 39px;
+  width: 100px;
+  height: 23px;
+  background-color: var(--skin);
+}
+
+.labongcat .mouth-mask-left {
+  position: absolute;
+  top: 127px;
+  left: 27px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 30px;
+  background-color: var(--skin);
+}
+
+.labongcat .mouth-mask-right {
+  position: absolute;
+  top: 127px;
+  right: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 30px 0;
+  background-color: var(--skin);
+}
+
+/* cats whisker */
+.labongcat .whiskers .left-top {
+  position: absolute;
+  top: 130px;
+  left: -15px;
+  width: 50px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 3px 0 0 3px;
+  transform: rotate(2deg);
+  animation: 수염좌상 2s infinite;
+}
+
+.labongcat .whiskers .left-bottom {
+  position: absolute;
+  top: 152px;
+  left: -3px;
+  width: 42px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 3px 0 0 3px;
+  transform: rotate(-15deg);
+}
+
+.labongcat .whiskers .right-top {
+  position: absolute;
+  top: 130px;
+  right: -15px;
+  width: 50px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 0 3px 3px 0;
+  transform: rotate(-2deg);
+}
+
+.labongcat .whiskers .right-bottom {
+  position: absolute;
+  top: 152px;
+  right: -3px;
+  width: 42px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 0 3px 3px 0;
+  transform: rotate(15deg);
+}

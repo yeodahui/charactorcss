@@ -1,0 +1,137 @@
+/* imports */
+@import "css/head.css";
+@import "css/hat.css";
+@import "css/arms.css";
+@import "css/hallabong.css";
+@import "css/hover-transition.css";
+
+/* animation */
+@keyframes 라봉캣 {
+  0% {
+    transform: scale(0.95) rotate(0deg);
+  }
+  25% {
+    transform: scale(1) rotate(3deg);
+  }
+  50% {
+    transform: scale(0.95) rotate(0deg);
+  }
+  75% {
+    transform: scale(1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(0.95) rotate(0deg);
+  }
+}
+
+@keyframes 왼쪽이파리 {
+  0% {
+    transform: rotate(-35deg);
+  }
+  30% {
+    transform: rotate(-15deg) translate(7px, -12px);
+  }
+  55% {
+    transform: rotate(-35deg);
+  }
+  85% {
+    transform: rotate(-45deg) translate(-3px, 4px);
+  }
+}
+
+@keyframes 오른쪽이파리 {
+  5% {
+    transform: rotate(55deg);
+  }
+  40% {
+    transform: rotate(25deg) translate(-2px, -10px);
+  }
+  75% {
+    transform: rotate(70deg) translate(8px, 8px);
+  }
+}
+
+/* setting */
+@font-face {
+  font-family: "UhBeeSeulvely";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --hallabong: #eea041;
+  --leaf: #4e5927;
+  --hat: #d96c0e;
+  --hallabongDot: #a65510;
+  --skin: #f5f3eb;
+  --nose: #e76a61;
+  /* F28686 */
+}
+
+/* reset */
+* {
+  font-family: "UhBeeSeulvely", cursive;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* design */
+body {
+  background-color: var(--leaf);
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+  color: white;
+  font-size: 26px;
+  font-family: "UhBeeSeulvely", cursive;
+}
+
+.header h1 {
+  font-size: 42px;
+}
+
+.labongcat {
+  /* background-color: #6c754a; */
+  width: 340px;
+  height: 550px;
+  animation: 라봉캣 6s infinite;
+}
+
+.labongcat .body {
+  position: absolute;
+  top: 290px;
+  left: 50px;
+  width: 240px;
+  height: 228px;
+  border: 5px solid #222;
+  border-radius: 170px 170px 120px 120px;
+  background-color: var(--skin);
+}
+
+.mouse-announce {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  color: #eea0418f;
+}

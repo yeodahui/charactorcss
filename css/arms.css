@@ -1,0 +1,71 @@
+/* arms */
+.labongcat .arm {
+  transform-origin: left top;
+  transition: 1s transform ease-in-out;
+}
+
+.labongcat .arm-base {
+  position: absolute;
+  top: 350px;
+  width: 50px;
+  height: 110px;
+  border: 5px solid #222;
+  background-color: var(--skin);
+  border-radius: 45%;
+}
+
+.labongcat .arm-base.left {
+  left: 43px;
+  transform: rotate(19deg);
+}
+
+.labongcat .arm-base.right {
+  right: 34px;
+  transform: rotate(-19deg);
+}
+
+.labongcat .arm-mask.left {
+  position: absolute;
+  top: 345px;
+  left: 59px;
+  width: 60px;
+  height: 80px;
+  border: 0px solid #ddd;
+  background-color: var(--skin);
+  border-radius: 20px 20% 20% 55%;
+  transform: rotate(28deg);
+}
+
+.labongcat .arm-mask.right {
+  position: absolute;
+  top: 345px;
+  right: 49px;
+  width: 60px;
+  height: 80px;
+  border: 0px solid #ddd;
+  background-color: var(--skin);
+  border-radius: 20px 20% 55% 20%;
+  transform: rotate(-28deg);
+}
+
+/* hands */
+.labongcat .hand {
+  position: absolute;
+  top: 420px;
+  width: 70px;
+  height: 60px;
+  border: 5px solid #222;
+  background-color: var(--skin);
+  border-radius: 45%;
+  transition: 1s transform;
+}
+
+.labongcat .hand.left {
+  left: 38px;
+  transform: rotate(-55deg);
+}
+
+.labongcat .hand.right {
+  right: 38px;
+  transform: rotate(55deg);
+}
